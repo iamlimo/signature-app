@@ -9,7 +9,7 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex gap-6 text-white">
-          <a href="#" className=" hover:font-bold">
+          <a href="/" className=" hover:font-bold">
             Home
           </a>
           <a href="#" className=" hover:font-bold">
