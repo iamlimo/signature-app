@@ -47,7 +47,7 @@ const Slider = () => {
         {movies.map((movie, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
-              <div className="absolute inset-0 bg-opacity-60"></div>
+              <div className="absolute inset-0 bg-opacity-60 bg-[rgba(6,6,6,0.79)] mix-blend-multiply"></div>
               <Image
                 src={movie.image}
                 alt={movie.title}
@@ -55,7 +55,7 @@ const Slider = () => {
                 objectFit="cover"
                 priority
               />
-              <div className="absolute inset-0 flex flex-col justify-end p-10 text-white z-10">
+              <div className="absolute inset-0 flex flex-col justify-center p-10 text-white z-10">
                 <h2 className="text-4xl font-bold">{movie.title}</h2>
                 <p className="text-lg">{movie.info}</p>
                 <p className="text-md mt-2">

@@ -25,7 +25,7 @@ export default function Navbar() {
           <button className="p-2 rounded-full text-white hover:bg-[#ED4B00]">
             <Search className="w-6 h-6" />
           </button>
-          <a href="/users">
+          <a href="/signup">
             <button className="p-2 rounded-full text-white hover:bg-[#ED4B00]">
               <User className="w-6 h-6" />
             </button>
