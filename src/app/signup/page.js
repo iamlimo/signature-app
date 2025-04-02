@@ -34,7 +34,7 @@ export default function SignUp() {
     setTimeout(() => {
       alert("Sign up successful!");
       setLoading(false);
-      router.push("/dashboard");
+      router.push("/users");
     }, 2000);
   };
 

@@ -1,4 +1,5 @@
 import { Search, User } from "lucide-react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -9,15 +10,15 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden md:flex gap-6 text-white">
-          <a href="/" className=" hover:font-bold">
+          <Link href="/" className=" hover:font-bold">
             Home
-          </a>
-          <a href="#" className=" hover:font-bold">
+          </Link>
+          <Link href="#" className=" hover:font-bold">
             Browse
-          </a>
-          <a href="#" className=" hover:font-bold">
+          </Link>
+          <Link href="#" className=" hover:font-bold">
             Coming Soon
-          </a>
+          </Link>
         </div>
 
         {/* Right Section */}
@@ -25,11 +26,11 @@ export default function Navbar() {
           <button className="p-2 rounded-full text-white hover:bg-[#ED4B00]">
             <Search className="w-6 h-6" />
           </button>
-          <a href="/signup">
+          <Link href="/signup">
             <button className="p-2 rounded-full text-white hover:bg-[#ED4B00]">
               <User className="w-6 h-6" />
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
